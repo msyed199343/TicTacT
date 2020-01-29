@@ -6,7 +6,7 @@ class Square
     end
 
    
-
+dsds
 
     
 
@@ -25,24 +25,10 @@ class Grid
     def move(player)
         done = false
     until done == true
-        count = 0
-        until count < 0 
-            first = gets.chomp.to_i 
-            second = gets.chomp.to_i 
-            if first > 2 || first < 0
-                 count +=1 
-            elsif second > 2 || second < 0
-                count +=1 
-            else
-                break
-            end
-        
-             
-                puts  "Number must be between 0 and 2.  Please enter both numbers again." if count > 0
-             
-        end
+        first = gets.chomp.to_i 
+        second = gets.chomp.to_i
         actual = grid[first][second]
-            
+    
         if player == "X" && actual == " "
             
                 grid[first][second] = "X"
